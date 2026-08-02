@@ -5,7 +5,7 @@
   "main": "index.js",
   "author": "Dr JP Lomas <jp@theqrl.org> (https://theqrl.org/)",
   "scripts": {
-    "build": "browserify --ignore node:fs --global-transform [ babelify --presets [ @babel/preset-env ] ] src/index.js -o dist/qrllib.js",
+    "build": "browserify --ignore node:fs --global-transform ./scripts/export-qrllib.js --global-transform [ babelify --presets [ @babel/preset-env ] ] src/index.js -o dist/qrllib.js",
     "test": "npm run build && http-server dist"
   },
   "repository": {
