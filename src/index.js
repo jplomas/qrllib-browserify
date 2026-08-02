@@ -16,7 +16,7 @@ const waitForQRLLIB = (callBack) => {
 async function makeWindow() {
   await QRLLIBmodule;
   waitForQRLLIB(() => {
-    console.log('QRLLIB v1.2.4 loaded');
+    console.log('QRLLIB v1.2.6 loaded');
     window.QRLLIB = QRLLIB;
   });
 }
